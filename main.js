@@ -9,7 +9,7 @@ function capturar(){
 
 function mostrar(){
     if(edad>=18){
-        alert("bienvenidos a bodeguas alianza")
+        alert("bienvenidos a bodegas alianza")
     }else{
         alert("Notienes edad suficinete para comprar alcohol")
     }

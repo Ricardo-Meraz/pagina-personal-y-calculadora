@@ -7,6 +7,8 @@ table
 {
     border-collapse: collapse;
     width: 75%;
+    width: 100%; /* Cambiado para adaptarse al ancho de la pantalla */
+    max-width: 800px; /* Cambiado para limitar el ancho máximo */
 }
 th, td 
 {
@@ -34,5 +36,21 @@ body
     align-items: center;
     flex-direction: column;
     display: flex;
+    margin: 0; /* Cambiado para evitar el espacio extra */
+    min-height: 100vh; /* Para ocupar el alto completo de la ventana */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    min-height: 100vh; /* Para ocupar el alto completo de la ventana */
+
     
+}
+
+@media (max-width: 600px) {
+    /* Estilos para pantallas más pequeñas */
+    body {
+        padding: 20px;
+    }
+    table {
+        margin: 10px;
+    }
 }
